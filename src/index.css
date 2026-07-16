@@ -1,0 +1,65 @@
+@import url('../src/styles/common/fonts.css');
+@import url('../src/styles/common/colors.css');
+@import url('../src/styles/common/navbar.css');
+@import url('../src/styles/common/cargando.css');
+@import url('../src/styles/common/botones.css');
+@import url('../src/styles/common/footer.css');
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--text-black) var(--color-gray);
+    height: 100%;
+}
+
+html,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100%;
+    background-color: var(--color-white);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Hace que Chrome/Edge NO apliquen el fondo amarillo/blanco del autofill a los inputs */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0px 1000px var(--color-black) inset !important;
+    box-shadow: 0 0 0px 1000px var(--color-black) inset !important;
+    -webkit-text-fill-color: var(--color-white) !important;
+    caret-color: var(--color-white) !important;
+    transition: background-color 9999s ease-in-out 0s !important;
+}
+
+/* Chrome scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
