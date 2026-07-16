@@ -1,0 +1,126 @@
+.sectionContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(to left, var(--color-white) 0%, transparent 100%);
+    min-height: calc(100svh - 62px);
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 20px;
+    width: 375px;
+    gap: 20px;
+}
+
+.badge {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--shadow-red);
+    border-radius: 20px;
+    border: 1px solid var(--color-red);
+    width: 320px;
+    padding: 5px 20px;
+    gap: 10px;
+}
+
+.contenido h1 {
+    color: var(--color-black);
+    font-size: 28px;
+}
+
+.contenido p {
+    font-size: 16px;
+    color: var(--color-black);
+}
+
+.badge p {
+    color: var(--color-red);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+@media (min-width: 576px) {
+    .sectionContainer {
+        justify-content: end;
+        background: linear-gradient(to right, var(--color-white) 40%, transparent 100%);
+        min-height: 0;
+        max-height: calc(100svh - 62px);
+    }
+
+    .imgFondo {
+        display: block;
+        position: relative;
+        z-index: -1;
+    }
+
+    .contenido {
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        padding: 0;
+        width: 500px;
+    }
+
+    .contenido h1 {
+        font-size: 34px;
+        width: 375px;
+    }
+
+    .contenido p {
+        width: 375px;
+    }
+}
+
+@media (min-width: 992px) {
+    .sectionContainer {
+        max-height: calc(100svh - 73px);
+    }
+
+    .contenido {
+        width: 800px;
+    }
+
+    .contenido p {
+        width: 500px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contenido {
+        width: 1100px;
+    }
+
+    .contenido h1 {
+        font-size: 38px;
+        width: 600px;
+    }
+
+    .contenido p {
+        width: 600px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .contenido {
+        width: 1270px;
+    }
+
+    .contenido h1 {
+        font-size: 44px;
+        width: 700px;
+    }
+}
+
+@media (min-width: 2000px) {
+    .sectionContainer {
+        background: linear-gradient(to right, var(--color-white) 55%, transparent 100%);
+    }
+}

@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: start;
     position: relative;
+    z-index: 1;
     background-color: var(--color-white);
     box-shadow: 0 4px 10px var(--shadow-black);
     padding: 5px 20px;

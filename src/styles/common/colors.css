@@ -10,6 +10,6 @@
     --text-black: #1a1a1a;
 
     --shadow-black: rgba(0, 0, 0, 0.3);
-    --shadow-red: rgba(172, 42, 49, 0.3);
-    --shadow-green: rgba(0, 105, 84, 0.3);
+    --shadow-red: rgba(172, 42, 49, 0.2);
+    --shadow-green: rgba(0, 105, 84, 0.2);
 }

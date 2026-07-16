@@ -3,6 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 1;
     background-color: var(--color-gray);
     box-shadow: 0 -4px 10px var(--shadow-black);
     padding: 20px;
