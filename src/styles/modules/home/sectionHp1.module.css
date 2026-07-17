@@ -31,6 +31,10 @@
     gap: 10px;
 }
 
+.badge img {
+    width: 10px;
+}
+
 .contenido h1 {
     color: var(--color-black);
     font-size: 28px;
@@ -53,6 +57,10 @@
         background: linear-gradient(to right, var(--color-white) 40%, transparent 100%);
         min-height: 0;
         max-height: calc(100svh - 62px);
+    }
+
+    .contenido {
+        gap: 10px;
     }
 
     .imgFondo {
@@ -79,12 +87,19 @@
     }
 }
 
+@media (min-width: 768px) {
+    .contenido {
+        width: 650px;
+    }
+}
+
 @media (min-width: 992px) {
     .sectionContainer {
         max-height: calc(100svh - 73px);
     }
 
     .contenido {
+        gap: 20px;
         width: 800px;
     }
 

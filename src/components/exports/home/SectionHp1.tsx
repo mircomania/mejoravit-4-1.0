@@ -1,6 +1,6 @@
 import styles from '../../../styles/modules/home/sectionHp1.module.css';
 import imgFondo from '../../../assets/images/home/fondo-home.png';
-import icono from '../../../assets/images/home/icon-home-1.png';
+import icono from '../../../assets/images/home/icono-home-1-1.svg';
 
 import { useMediaQuery } from '../../../hooks/useMediaQuery';
 import { BotonNav } from '../../utils/BotonNav';

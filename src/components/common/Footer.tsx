@@ -3,7 +3,7 @@ import { NavItems } from '../utils/NavItems';
 
 import { footerMenu } from '../utils/footerMenu';
 
-import logo from '../../assets/images/common/logo.png';
+import logo from '../../assets/images/common/logo.svg';
 
 export function Footer() {
     return (

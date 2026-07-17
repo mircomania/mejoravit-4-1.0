@@ -1,5 +1,5 @@
 import { BurgerIcon } from '../../assets/icons/BurgerIcon';
-import logo from '../../assets/images/common/logo.png';
+import logo from '../../assets/images/common/logo.svg';
 
 import { useBurgerMenu } from '../../hooks/useBurgerMenu';
 
