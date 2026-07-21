@@ -20,8 +20,16 @@
     gap: 10px;
 }
 
+.sectionContainer header h2 {
+    font-size: 26px;
+}
+
 .sectionContainer header img {
     width: 250px;
+}
+
+.sectionContainer header p {
+    font-size: 16px;
 }
 
 .sectionForm {
@@ -74,4 +82,49 @@
 
 .politicasForm p {
     font-size: 13px;
+}
+
+@media (min-width: 992px) {
+    .sectionContainer {
+        flex-direction: row;
+        align-items: start;
+        gap: 120px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sectionContainer {
+        gap: 20px;
+    }
+
+    .sectionForm {
+        width: 480px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .sectionContainer {
+        gap: 200px;
+    }
+
+    .sectionContainer header {
+        width: 420px;
+        gap: 10px;
+    }
+
+    .sectionContainer header h2 {
+        font-size: 38px;
+    }
+
+    .sectionContainer header img {
+        width: 450px;
+    }
+
+    .sectionContainer header p {
+        font-size: 18px;
+    }
+
+    .sectionForm {
+        width: 580px;
+    }
 }

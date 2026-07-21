@@ -7,7 +7,7 @@ type SpinnerProps = {
     speed?: number;
 };
 
-export function Spinner({ size = 24, color = 'currentColor', strokeWidth = 3, speed = 1 }: SpinnerProps) {
+export function SpinnerIcon({ size = 24, color = 'currentColor', strokeWidth = 3, speed = 1 }: SpinnerProps) {
     return (
         <svg
             className={styles.spinner}

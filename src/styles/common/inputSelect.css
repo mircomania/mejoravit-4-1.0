@@ -9,7 +9,7 @@
 
 @media (min-width: 1200px) {
     .select-scope {
-        --select-width: 440px;
+        --select-width: 438px;
     }
 }
 
@@ -17,9 +17,9 @@
     .select-scope {
         --select-height: 38px;
         --select-font: 18px;
-        --select-width: 540px;
-        --placeholder-marginB: 4px;
-        --menu-border: 20px 20px 10px 10px;
-        --option-padding: 6px 12px;
+        --select-width: 538px;
+        --placeholder-marginB: 0px;
+        --menu-border: 5px 5px 10px 10px;
+        --option-padding: 4px 12px;
     }
 }

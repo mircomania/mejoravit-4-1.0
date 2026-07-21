@@ -39,6 +39,16 @@
     }
 
     .footer ul {
+        gap: 30px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .footer {
+        padding: 50px 100px;
+    }
+
+    .footer ul {
         gap: 40px;
     }
 }

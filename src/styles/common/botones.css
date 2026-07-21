@@ -24,14 +24,15 @@
     width: 293px;
 }
 
-.boton-form img {
+.boton-icono {
+    color: var(--color-white);
     width: 16px;
+    height: 16px;
 }
 
 @media (min-width: 1200px) {
     .boton-1:hover,
-    .boton-2:hover,
-    .boton-form:hover {
+    .boton-2:hover {
         background: var(--color-gray);
     }
 
@@ -39,5 +40,15 @@
     .boton-2:active,
     .boton-form:active {
         transform: scale(0.9);
+    }
+
+    .boton-form {
+        width: 440px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .boton-form {
+        width: 540px;
     }
 }

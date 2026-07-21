@@ -1,4 +1,4 @@
-import { Suspense } from 'react';
+import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import { Navbar } from './components/common/Navbar';
@@ -7,6 +7,8 @@ import { Footer } from './components/common/Footer';
 
 import { Cargando } from './components/utils/Cargando';
 import { ScrollToTop } from './utils/scrollToTop';
+
+const ContactoPage = lazy(() => import('./components/pages/ContactoPage'));
 
 function App() {
     return (
@@ -24,6 +26,7 @@ function App() {
             >
                 <Routes>
                     <Route path="/" element={<HomePage />} />
+                    <Route path="/precalificar" element={<ContactoPage />} />
                 </Routes>
             </Suspense>
 

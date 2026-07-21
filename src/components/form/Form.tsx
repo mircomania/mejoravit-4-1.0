@@ -8,8 +8,8 @@ import 'react-phone-input-2/lib/style.css';
 
 import styles from '../../styles/modules/form.module.css';
 
-import icon from '../../assets/images/home/flecha-derecha.svg';
-import { Spinner } from '../../assets/icons/Spinner';
+import { FlechaIcon } from '../../assets/icons/FlechaIcon';
+import { SpinnerIcon } from '../../assets/icons/SpinnerIcon';
 import { useForm } from '../../hooks/useForm';
 
 import { CustomSelect, type SelectOption } from './CustomSelect';
@@ -153,10 +153,10 @@ export const Form = () => {
                 <div className={styles.contentEnvio}>
                     <button type="submit" className="boton-form alliance-text" disabled={loading} aria-busy={loading}>
                         {loading ? (
-                            <Spinner size={22} color="var(--color-white)" strokeWidth={3} speed={1} />
+                            <SpinnerIcon size={22} color="var(--color-white)" strokeWidth={3} speed={1} />
                         ) : (
                             <>
-                                Enviar <img src={icon} alt="" />
+                                Enviar <FlechaIcon className="boton-icono" />
                             </>
                         )}
                     </button>
