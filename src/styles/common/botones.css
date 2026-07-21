@@ -1,5 +1,5 @@
 .boton-1,
-.boton-2 {
+.boton-form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,20 +16,28 @@
     padding: 20px 40px;
 }
 
-.boton-2 {
-    background-color: var(--white-color);
-    color: var(--blue-color);
-    padding: 20px 35px;
+.boton-form {
+    border: none;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    padding: 20px 0px;
+    width: 293px;
+}
+
+.boton-form img {
+    width: 16px;
 }
 
 @media (min-width: 1200px) {
     .boton-1:hover,
-    .boton-2:hover {
+    .boton-2:hover,
+    .boton-form:hover {
         background: var(--color-gray);
     }
 
     .boton-1:active,
-    .boton-2:active {
+    .boton-2:active,
+    .boton-form:active {
         transform: scale(0.9);
     }
 }

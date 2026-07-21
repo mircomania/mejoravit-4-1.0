@@ -1,0 +1,105 @@
+.form {
+    position: relative;
+    z-index: 1;
+    color: var(--color-black);
+    padding-bottom: 20px;
+}
+
+.inputContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.inputContainer select,
+.inputContainer input {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.inputContainer label {
+    margin-bottom: 15px;
+    margin-left: 2px;
+    font-size: 14px;
+}
+
+.input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 5px;
+    padding: 4px 0;
+    margin-bottom: 15px;
+    background-color: var(--color-gray);
+    color: var(--color-black);
+    border: solid 1px var(--color-silver);
+    font-size: 16px;
+    resize: none;
+    padding-left: 50px;
+}
+
+.input::placeholder {
+    color: var(--color-silver);
+    font-size: 13px;
+}
+
+.input:focus {
+    outline: none;
+    border: solid 1px var(--color-red);
+    background-color: var(--color-white);
+}
+
+.labelError {
+    color: red;
+}
+
+.fieldError {
+    position: absolute;
+    font-size: 13px;
+    top: 17px;
+    left: 2px;
+}
+
+.contentEnvio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.mensajeErrorGeneral {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.mensajeErrorGeneral p {
+    position: absolute;
+    z-index: 1;
+    color: var(--color-red);
+    margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+    .form {
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .inputContainer label {
+        font-size: 16px;
+    }
+
+    .input {
+        padding: 5px 0;
+        font-size: 18px;
+        height: 38px;
+    }
+
+    .input::placeholder {
+        font-size: 16px;
+    }
+}

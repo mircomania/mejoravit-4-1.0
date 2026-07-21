@@ -1,0 +1,25 @@
+.select-scope {
+    --select-font: 16px;
+    --select-height: 33px;
+    --select-width: 293px;
+    --placeholder-marginB: 0px;
+    --menu-border: 5px 5px 10px 10px;
+    --option-padding: 4px 12px;
+}
+
+@media (min-width: 1200px) {
+    .select-scope {
+        --select-width: 440px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .select-scope {
+        --select-height: 38px;
+        --select-font: 18px;
+        --select-width: 540px;
+        --placeholder-marginB: 4px;
+        --menu-border: 20px 20px 10px 10px;
+        --option-padding: 6px 12px;
+    }
+}

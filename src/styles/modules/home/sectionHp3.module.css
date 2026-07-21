@@ -1,0 +1,77 @@
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);
+    padding: 20px;
+    padding-bottom: 80px;
+    gap: 40px;
+}
+
+.sectionContainer header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-black);
+    width: 335px;
+    gap: 10px;
+}
+
+.sectionContainer header img {
+    width: 250px;
+}
+
+.sectionForm {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: -6px 4px 10px var(--shadow-black);
+    border: solid 1px var(--color-gray);
+    border-radius: 20px;
+    padding: 40px 20px;
+    width: 335px;
+    gap: 40px;
+}
+
+.sectionForm::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 7px;
+    background-color: var(--color-red);
+    border-radius: 20px 0 0 0;
+}
+
+.obligatorio {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 13px;
+    color: var(--color-silver);
+}
+
+.politicasForm {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    color: var(--text-black);
+    padding: 0 10px;
+    gap: 10px;
+}
+
+.politicasForm img {
+    margin-top: 3px;
+    width: 13px;
+}
+
+.politicasForm p {
+    font-size: 13px;
+}

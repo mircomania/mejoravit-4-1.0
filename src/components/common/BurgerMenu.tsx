@@ -17,6 +17,7 @@ export const BurgerMenu = () => {
                 aria-controls="mobile-menu"
                 onClick={toggleMenu}
                 className={`burger-menu-container ${isOpen ? 'open' : ''}`}
+                tabIndex={-1}
             >
                 <BurgerIcon className="burger-menu-icon" aria-label="Abrir menú de navegación" />
             </button>
