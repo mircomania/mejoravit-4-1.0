@@ -1,37 +1,33 @@
-import styles from '../../../styles/modules/home/sectionHp3.module.css';
+import styles from '../../../styles/modules/contacto/sectionCp1.module.css';
 
-import logo from '../../../assets/images/common/logo.svg';
-import icon from '../../../assets/images/home/icono-home-3-1.svg';
+import icono from '../../../assets/images/home/icono-home-2-2.svg';
 
-import { Form } from '../../form/Form';
+import { sectionCp1Menu } from '../../utils/sectionCp1Menu';
 
 export const SectionCp1 = () => {
     return (
         <section className={styles.sectionContainer}>
-            <header>
-                <h2>Precalifica para obtener tu</h2>
+            <article className={styles.sectionContenido}>
+                <header>
+                    <img src={icono} alt="Lista de datos" />
 
-                <img src={logo} alt="logotipo de Mejoravit" />
+                    <h1>¿Por qué estos datos?</h1>
+                </header>
 
-                <p>
-                    Ingresa tus datos para precalificar, y un asesor certificado se comunicará contigo para brindarte más información sobre tu crédito
-                    Mejoravit.
-                </p>
-            </header>
+                <div className={styles.sectionDatos}>
+                    {sectionCp1Menu.map((item) => (
+                        <div key={item.id} className={styles.dato}>
+                            <img src={item.img} alt={item.title} />
 
-            <div className={styles.sectionForm}>
-                <h3>Ingresa tus Datos </h3>
+                            <div>
+                                <h3>{item.title}</h3>
 
-                <p className={styles.obligatorio}>*Obligatorio</p>
-
-                <Form />
-
-                <div className={styles.politicasForm}>
-                    <img src={icon} alt="candando de seguridad que protege tus datos" />
-
-                    <p>Sus datos están protegidos. El uso de esta información es exclusivamente para fines de evaluación técnica habitacional.</p>
+                                <p>{item.text}</p>
+                            </div>
+                        </div>
+                    ))}
                 </div>
-            </div>
+            </article>
         </section>
     );
 };
