@@ -6,6 +6,7 @@
     --color-red: #ac2a31;
     --color-green: #006954;
     --color-blue: #8a96c9;
+    --color-darkblue: #465280;
     --color-purple: #bbc7fd;
 
     --text-black: #1a1a1a;
@@ -13,4 +14,5 @@
     --shadow-black: rgba(0, 0, 0, 0.2);
     --shadow-red: rgba(172, 42, 49, 0.2);
     --shadow-green: rgba(0, 105, 84, 0.2);
+    --shadow-blue: rgba(138, 150, 201, 0.5);
 }

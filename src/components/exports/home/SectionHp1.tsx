@@ -1,5 +1,5 @@
 import styles from '../../../styles/modules/home/sectionHp1.module.css';
-import imgFondo from '../../../assets/images/home/fondo-home.png';
+import imgFondo from '../../../assets/images/home/fondo-home.webp';
 import icono from '../../../assets/images/home/icono-home-1-1.svg';
 
 import { useMediaQuery } from '../../../hooks/useMediaQuery';
