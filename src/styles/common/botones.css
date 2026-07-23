@@ -1,4 +1,5 @@
 .boton-1,
+.boton-2,
 .boton-form {
     display: flex;
     align-items: center;
@@ -16,6 +17,14 @@
     padding: 20px 40px;
 }
 
+.boton-2 {
+    border: none;
+    background-color: var(--color-white);
+    color: var(--color-red);
+    padding: 20px 20px;
+    font-weight: bold;
+}
+
 .boton-form {
     border: none;
     background-color: var(--color-red);
@@ -31,9 +40,17 @@
 }
 
 @media (min-width: 1200px) {
-    .boton-1:hover,
-    .boton-2:hover {
+    .boton-1:hover {
         background: var(--color-gray);
+    }
+
+    .boton-2 {
+        padding: 20px 60px;
+    }
+
+    .boton-2:hover {
+        background-color: var(--color-red);
+        color: var(--color-white);
     }
 
     .boton-1:active,

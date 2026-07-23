@@ -30,7 +30,7 @@ export const Navbar = () => {
 
                 {!isMobile && (
                     <div className="container-boton-nav">
-                        <BotonNav to="/unete" className="boton-nav" dataCta="navbar-unete-btn">
+                        <BotonNav to="/precalificar" className="boton-nav" dataCta="navbar-unete-btn">
                             Inicia tu Mejoravit
                         </BotonNav>
                     </div>
