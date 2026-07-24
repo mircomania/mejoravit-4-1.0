@@ -1,0 +1,50 @@
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-black);
+    padding: 40px 10vw;
+    padding-bottom: 80px;
+    gap: 20px;
+}
+
+.sectionContainer header {
+    text-align: center;
+}
+
+.sectionContainer header img {
+    user-select: none;
+    pointer-events: none;
+    width: 200px;
+}
+
+.sectionContainer header h1 {
+    font-size: 28px;
+}
+
+.sectionContenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.sectionContenido p {
+    font-size: 16px;
+}
+
+.sectionContenido a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color-red);
+}
+
+@media (min-width: 1200px) {
+    .sectionContainer {
+        padding: 40px 20vw;
+        padding-bottom: 80px;
+    }
+}

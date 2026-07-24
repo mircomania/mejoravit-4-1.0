@@ -10,6 +10,7 @@ import { ScrollToTop } from './utils/scrollToTop';
 
 const ContactoPage = lazy(() => import('./components/pages/ContactoPage'));
 const InfoPage = lazy(() => import('./components/pages/InfoPage'));
+const PoliticasPage = lazy(() => import('./components/pages/PoliticasPage'));
 
 function App() {
     return (
@@ -29,6 +30,7 @@ function App() {
                     <Route path="/" element={<HomePage />} />
                     <Route path="/precalificar" element={<ContactoPage />} />
                     <Route path="/informacion" element={<InfoPage />} />
+                    <Route path="/politica-privacidad" element={<PoliticasPage />} />
                 </Routes>
             </Suspense>
 

@@ -20,7 +20,9 @@ export function Footer() {
                 ))}
             </ul>
 
-            <p>© 2026 Mejoravit. All rights reserved.</p>
+            <p>
+                © 2026 Mejoravit. <br /> All rights reserved.
+            </p>
         </footer>
     );
 }
